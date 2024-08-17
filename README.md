@@ -12,14 +12,19 @@ I began by navigating to the Azure portal and searching for "Network security gr
 
 ![image](https://github.com/user-attachments/assets/a159a965-3e4e-4197-b31c-9e2e9b5462df)
 
+
 ![NSG1](https://github.com/user-attachments/assets/35d8ea72-2503-4c26-b3c5-ec34581d1272)
 
+
 ![NSG2](https://github.com/user-attachments/assets/d649b5e8-7e23-4b40-8f7f-ee84df412f45)
+
 
 ![NSG3](https://github.com/user-attachments/assets/b261ba91-0581-4608-a27c-67a4513136f3)
 
 
 ## Configuring Inbound Rules:
+
+![image](https://github.com/user-attachments/assets/30dfc72b-69de-4336-8acc-12e50127d79e)
 
 Once the NSG was created, I proceeded to configure inbound security rules, which dictate how incoming traffic is handled. The goal was to create a rule that blocks all inbound traffic by default, thereby securing the network from unauthorized access.
 
@@ -38,6 +43,8 @@ Action: I selected "Block" as the action for this rule, which prevents all traff
 Priority: Priority is a critical setting in NSGs, as it determines the order in which rules are applied. I set this rule’s priority to 4096, the highest number Azure allows, making it the last rule to be applied. This means that it will block any traffic that hasn't been allowed by a higher-priority rule, serving as a catch-all safety net.
 
 Naming and Description: I named the rule "Default-Deny" and provided a clear description: "Deny all inbound traffic." This descriptive naming convention helps in quickly identifying the rule’s purpose when managing the NSG in the future.
+
+![image](https://github.com/user-attachments/assets/cb156efb-83e2-40f9-8e20-2861dadb6693)
 
 c. Verifying the NSG:
 
