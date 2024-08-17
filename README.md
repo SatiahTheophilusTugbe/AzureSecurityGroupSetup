@@ -46,14 +46,16 @@ Naming and Description: I named the rule "Default-Deny" and provided a clear des
 
 ![image](https://github.com/user-attachments/assets/cb156efb-83e2-40f9-8e20-2861dadb6693)
 
-c. Verifying the NSG:
+## Verifying the NSG:
 
 After configuring and saving the inbound rule, I reviewed the NSG’s settings to ensure everything was correctly implemented. The NSG overview provided a summary of the applied rules, confirming that the "Default-Deny" rule was active and that all inbound traffic was effectively blocked.
 
-Strategic Considerations:
+![image](https://github.com/user-attachments/assets/1946e860-08e8-47fc-83e1-d158954186f7)
+
+## Strategic Considerations:
 The decision to implement a "Default-Deny" rule as the last rule in the NSG is a best practice in network security. This approach ensures that no traffic can reach the network unless explicitly permitted by other rules. It’s a proactive measure that significantly reduces the risk of unauthorized access and potential breaches.
 
 Additionally, by configuring the NSG within the same region as the VNet and resource group, I maintained consistency across the cloud environment. This consistency is vital for performance optimization, as it reduces latency and ensures that all resources operate within the same geographical and technical context.
 
-Conclusion of Security Implementation:
+## Conclusion of Security Implementation:
 With the NSG in place, I have added a robust layer of security to the VNet, protecting the cloud environment from unauthorized access and potential threats. This setup ensures that the network is not only functional but also secure, laying a strong foundation for future deployments and operations.
